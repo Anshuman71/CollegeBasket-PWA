@@ -15,97 +15,98 @@ class SubmitBook extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      condition:'',
+      condition: '',
       checked: false,
     }
-  
+
   }
   updateCheck = () => {
     const now = this.state.checked;
-    this.setState({checked: !now}); 
+    this.setState({ checked: !now });
   }
 
-  handleChange = (event, index, condition) => this.setState({condition});
+  handleChange = (event, index, condition) => this.setState({ condition });
 
   render() {
     return (
       <div
-      style={{ display:'flex',
-      minHeight:'700px',
-      flexBasis:'100%',
-      flexWrap:'wrap',
-      justifyContent:'center',
-      backgroundColor:'#f5f5f5'
-     }}
+        style={{
+          display: 'flex',
+          minHeight: '700px',
+          flexBasis: '100%',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          backgroundColor: '#f5f5f5'
+        }}
       >
         <Paper
-        zDepth={3}
-        style={{
-          padding:'20px',maxHeight:'630px',
-          maxWidth:'420px',
-          backgroundColor:'#fff',margin:'20px',
-          fontSize:'20px',color:'#FF7043'
-        }}
+          zDepth={3}
+          style={{
+            padding: '20px', maxHeight: '630px',
+            maxWidth: '420px',
+            backgroundColor: '#fff', margin: '20px',
+            fontSize: '20px', color: '#FF7043'
+          }}
         >
-            Sumbit your book here !
+          Sumbit your book here !
           <Divider
-          style={{marginTop:'10px'}}
+            style={{ marginTop: '10px' }}
           />
           <TextField
-          floatingLabelText="Book Name"
-          style={{width:'300px',margin:'0px'}}
+            floatingLabelText="Book Name"
+            style={{ width: '300px', margin: '0px' }}
           />
-          <br/>
+          <br />
           <TextField
-          floatingLabelText="Author"
-          style={{width:'300px',margin:'0px'}}
+            floatingLabelText="Author"
+            style={{ width: '300px', margin: '0px' }}
           />
-          <br/>
+          <br />
           <TextField
-          floatingLabelText="Edition"
-          style={{width:'300px',margin:'0px'}}
+            floatingLabelText="Edition"
+            style={{ width: '300px', margin: '0px' }}
           />
-          <br/>
-        
+          <br />
+
           <SelectField
-          style={{ width:'300px' }}
-          floatingLabelText="Useful For"
+            style={{ width: '300px' }}
+            floatingLabelText="Useful For"
           >
             <MenuItem>
             </MenuItem>
           </SelectField>
-        
+
           <SelectField
-          value={this.state.condition}
-          onChange={this.handleChange}
-          style={{ width:'300px' }}
-          floatingLabelText="Condition"
+            value={this.state.condition}
+            onChange={this.handleChange}
+            style={{ width: '300px' }}
+            floatingLabelText="Condition"
           >
             <MenuItem
-            value={null}
-            primaryText=""
+              value={null}
+              primaryText=""
             />
             <MenuItem
-            value={1}
-            primaryText="New"
+              value={1}
+              primaryText="New"
             />
             <MenuItem
-            value={2}
-            primaryText="Looks like new"
+              value={2}
+              primaryText="Looks like new"
             />
             <MenuItem
-            value={3}
-            primaryText="Good to go"
+              value={3}
+              primaryText="Good to go"
             />
             <MenuItem
-            value={4}
-            primaryText="Usable"
+              value={4}
+              primaryText="Usable"
             />
           </SelectField>
-      
-          <br/>
-          <br/>
-          
+
+          <br />
+          <br />
+
           <Checkbox
             checkedIcon={<ActionFavorite />}
             uncheckedIcon={<ActionFavoriteBorder />}
@@ -113,40 +114,40 @@ class SubmitBook extends Component {
             onCheck={this.updateCheck}
           />
 
-          <br/>
-          
+          <br />
+
           <img
-          src={require('../images/rupee.svg')}
-          alt="Book"
-          style={{maxHeight:'18px',maxWidth:'18px',paddingTop:'20px'}}
+            src={require('../images/rupee.svg')}
+            alt="Book"
+            style={{ maxHeight: '18px', maxWidth: '18px', paddingTop: '20px' }}
           />
           <TextField
-          floatingLabelText="Price"
-          disabled={this.state.checked}
-          style={{width:'290px',margin:'0px'}}
+            floatingLabelText="Price"
+            disabled={this.state.checked}
+            style={{ width: '290px', margin: '0px' }}
           />
 
-          <br/>
+          <br />
           <RaisedButton
-          primary
-          label="Snaps"
-          style={{
-            width:'120px',
-            maxHeight:'35px',
-            textAlign:'center',
-            margin:'10px'
-          }}
+            primary
+            label="Snaps"
+            style={{
+              width: '120px',
+              maxHeight: '35px',
+              textAlign: 'center',
+              margin: '10px'
+            }}
           />
 
           <RaisedButton
-          primary
-          label="Sell"
-          style={{
-            width:'120px',
-            maxHeight:'35px',
-            textAlign:'center',
-            margin:'10px'
-          }}
+            primary
+            label="Sell"
+            style={{
+              width: '120px',
+              maxHeight: '35px',
+              textAlign: 'center',
+              margin: '10px'
+            }}
           />
 
         </Paper>

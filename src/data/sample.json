@@ -1,18 +1,28 @@
 [
   {
-    "index":0,
-    "name":"Computer System Architechture",
-    "usefulFor":["B.Sc Computer Science Hons"],
-    "price":"200",
-    "image":"morismano.jpg",
-    "seller":"name of selle"
+    "index": 0,
+    "name": "Computer System Architechture",
+    "usefulFor": [
+      "B.Sc Computer Science Hons"
+    ],
+    "price": "200",
+    "edition": 4,
+    "writer": "Moris Mano",
+    "condition": "Good to go",
+    "image": "morismano.jpg",
+    "seller": "Creator"
   },
   {
-    "index":0,
-    "name":"An Approuch to C++ ",
-    "usefulFor":["B.Sc Computer Science Hons"],
-    "price":"300",
-    "image":"frouzenc++.jpg",
-    "seller":"name of selle"
+    "index": 0,
+    "name": "An Approuch to C++ ",
+    "usefulFor": [
+      "B.Sc Computer Science Hons"
+    ],
+    "price": "300",
+    "edition": 5,
+    "writer": "Frouzen",
+    "condition": "New",
+    "image": "frouzenc++.jpg",
+    "seller": "Creator"
   }
 ]

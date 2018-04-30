@@ -17,15 +17,7 @@ export default class CardItem extends React.Component {
   render() {
     const product = this.props.product;
     let path  = require("../images/"+product.image);
-    let subtitle = '';
-    if(product.isExclusive)
-    {
-      subtitle = "Exclusive";
-    }
-    if(product.isSale)
-    {
-      subtitle += " Sale";
-    }
+    const subtitle = product.writer;
     return (
       <Card
       expanded={this.state.expanded} 
@@ -33,11 +25,11 @@ export default class CardItem extends React.Component {
       style={{ width:'385px' }}
       >
       <CardHeader
-          title = {product.name}
-          subtitle = 'I love it'
+          title = {product.name+' '+product.edition+'th edition'}
+          subtitle = {'by '+ subtitle}
           actAsExpander={true}
           showExpandableButton={true}
-          style={{minHeight:'70px'}}
+          style={{minHeight:'70px',maxHeight:'73px'}}
           titleColor="#388E3C"
           titleStyle={{fontSize:'18px'}}
           subtitleColor="#FF7043"
@@ -77,6 +69,14 @@ export default class CardItem extends React.Component {
         color:"#fff",padding:'10px',margin:'5px 10px'}}
         >
         Useful For : {product.usefulFor.join(' , ')}   
+        </Paper>
+
+        <Paper
+        zDepth={2}
+        style={{height:'35px',backgroundColor:'#388E3C',
+        color:"#fff",padding:'10px',margin:'5px 10px'}}
+        >
+        Condition : {product.condition}   
         </Paper>
 
       </CardText>  

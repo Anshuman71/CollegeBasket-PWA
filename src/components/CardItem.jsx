@@ -30,7 +30,7 @@ export default class CardItem extends React.Component {
       <Card
       expanded={this.state.expanded} 
       onExpandChange={this.handleExpandChange}
-      style={{width:'385px'}}
+      style={{ width:'385px' }}
       >
       <CardHeader
           title = {product.name}
@@ -46,7 +46,7 @@ export default class CardItem extends React.Component {
       <CardMedia
       style={{padding:'15px'}}
       >
-      <img src={path} alt="Cloth" style={{padding:'auto',maxHeight:'400px',maxWidth:'340px',margin:'auto'}}/> 
+      <img src={path} alt="Cloth" style={{padding:'auto',maxHeight:'400px',maxWidth:'300px',margin:'auto'}}/> 
       </CardMedia>
       <Divider/>
       <CardText

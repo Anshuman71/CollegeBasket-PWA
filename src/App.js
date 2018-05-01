@@ -7,6 +7,7 @@ import './App.css';
 import AvailableItems from './components/AvailableItems';
 import SubmitBook from './components/SubmitBook';
 import Login from './components/Login';
+import SignUp from './components/SignUp';
 import BottomNav from './components/BottomNav';
 
 class App extends Component {
@@ -22,9 +23,10 @@ class App extends Component {
       >
         <div style={{ backgroundColor: '#f5f5f5' }}>
           <AppBar title="CollegeBasket"></AppBar>
-          <AvailableItems />
+          {/* <AvailableItems /> */}
           {/* <SubmitBook/> */}
           {/* <Login /> */}
+          <SignUp/>
           <BottomNav/>
         </div>
       </MuiThemeProvider>

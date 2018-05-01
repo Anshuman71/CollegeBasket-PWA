@@ -17,7 +17,7 @@ class Login extends Component {
     return (
       <div
         style={{
-          height: '670px', backgroundColor: '#f5f5f5',
+          height: '670px', backgroundColor: '#dfdfdf',
           display: "flex", flexWrap: 'wrap',
           textAlign: 'center', justifyContent: 'center'
         }}

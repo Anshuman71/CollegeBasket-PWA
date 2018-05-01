@@ -20,7 +20,7 @@ class SignUp extends Component {
           backgroundColor: '#dfdfdf',
           height: '670px',
           display: "flex", flexWrap: 'wrap',
-          justifyContent: 'center'
+          justifyContent: 'center',alignItems:'center'
         }}
       >
         <Paper

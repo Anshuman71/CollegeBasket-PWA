@@ -66,7 +66,9 @@ class TheStepper extends React.Component {
           <Step>
             <StepLabel>Sign Up</StepLabel>
             <StepContent>
-              <p>
+              <p
+              style={{lineHeight:'22px'}}
+              >
                 Welcome to <b style={{ color: '#4CAF50' }}>CollegeBasket </b>
                 <br />
                 Follow along us to sign up in 3 easy steps
